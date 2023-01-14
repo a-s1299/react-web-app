@@ -1,0 +1,205 @@
+:root {
+    --content-card-height:calc(100vh - 335px);
+    --inner-content-card-height: calc(calc(100vh - 405px)/2);
+    --nav-button-height: calc(var(--inner-content-card-height)/4);
+
+    /* twist */
+    --primary-color: rgb(233, 233, 233);
+    --secondary-color:rgb(66, 69, 78);
+    --tertiary-color: rgb(228, 156, 0); 
+    --quaternary-color:rgb(102, 130, 172);
+    /* bingsu */
+    /* --primary-color:rgb(122, 65, 89); 
+    --secondary-color: rgb(216, 193, 191); 
+    --tertiary-color:rgb(255, 255, 255);
+    --quaternary-color: rgb(165, 141, 144); */
+     /* carbon  */
+    /* --primary-color:rgb(199, 93, 23); 
+    --secondary-color:rgb(51, 54, 51);
+    --tertiary-color: rgb(224, 235, 195); 
+    --quaternary-color: rgb(70, 77, 64); */
+     /* bento  */
+    /* --primary-color:rgb(202, 112, 135);
+    --secondary-color: rgb(51, 68, 83); 
+    --tertiary-color:rgb(255, 255, 255);
+    --quaternary-color: rgb(35, 46, 58); */
+     /* laser  */
+    /* --primary-color:rgb(196, 75, 105);
+    --secondary-color: rgb(39, 32, 77); 
+    --tertiary-color:rgb(248, 236, 255);
+    --quaternary-color: rgb(48, 154, 158); */
+
+}
+
+[color=to-primary] {
+    color: var(--primary-color);
+}
+
+.App {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--primary-color);
+}
+
+.card {
+    background-color: var(--secondary-color);
+    border-radius: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+body {
+    background-color: var(--quaternary-color);
+}
+
+p {
+    margin:0;
+}
+
+hr {
+    width: 50%;
+    border-style: dashed;
+    color: var(--primary-color);
+}
+
+input {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+input:focus { 
+    outline: 2px solid var(--tertiary-color);
+}
+
+input[id=leftInput] {
+    width:97%;
+}
+
+input[type=text] {
+    width:97%;
+    border-style:none;
+    border-bottom-style: groove;
+    border-color: var(--primary-color);
+}
+
+input[type=text]:hover {
+    border-color: var(--tertiary-color);
+}
+
+label[id='dim'] {
+    font-family:'Courier New', Courier, monospace;
+    opacity: 50%;
+}
+
+.content {
+    text-align: left;
+    display: flex;
+}
+
+.card#split-width {
+    width: 100%;
+    height: var(--content-card-height);
+    min-height: 500px;
+}
+
+#inner {
+    display:flex;
+    flex-direction: column;
+    height: var(--inner-content-card-height);
+
+    min-height: 215px; 
+    background-color: var(--quaternary-color);
+}
+
+#theme-div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+ /* start button-nav  */
+#button-nav {
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border:0;
+    margin: 10px;
+    height: var(--nav-button-height);
+    min-height: 34px;
+}
+
+#button-nav:hover {
+    background-color: var(--tertiary-color);
+    color:var(--secondary-color);
+}
+
+#button-nav:active {
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+}
+ /* end button-nav  */
+
+
+ /* start button-action  */
+#button-action {
+    border-radius: 5px;
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    border:0;
+    margin: 0 0 calc(calc(var(--inner-content-card-height)/3) - 50px) 0;
+}
+
+#button-action:hover {
+    background-color: var(--tertiary-color);
+    color:var(--secondary-color);
+}
+
+#button-action:active {
+    background-color: var(--primary-color);
+    color:var(--tertiary-color);
+}
+ /* end button-action  */
+
+
+ /* start button-action-alt  */
+#button-action-alt {
+    border-radius: 5px;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border:0;
+    margin-left: calc(calc(50vw / 2) - 50px);
+}
+
+#button-action-alt:hover {
+    background-color: var(--tertiary-color);
+    color:var(--primary-color);
+}
+
+#button-action-alt:active {
+    background-color: var(--secondary-color);
+    color:var(--tertiary-color);
+}
+ /* end button-action-alt  */
+
+
+ /* start button-theme  */
+#button-theme {
+    width: 10vw;
+    min-width: fit-content;
+    height: 30px;
+    margin: 0 4vw 0 4vw;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--primary-color);
+}
+
+#button-theme:hover {
+    background-color: var(--tertiary-color);
+    color:var(--primary-color);
+}
+
+#button-theme:active {
+    background-color: var(--secondary-color);
+    color:var(--tertiary-color);
+}
+ /* end button-theme  */
